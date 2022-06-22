@@ -1,4 +1,87 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../assets/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+:root {
+  /* -------- Fonts -------- */
+  --fnt-regular: 'Roboto-Regular';
+  --fnt-dark: 'Roboto-Black';
+  --fnt-bold: 'Roboto-Bold';
+
+  /* -------- Colors -------- */
+  --clr-white: #FFFFFF;
+  --clr-cloud: #C4C4C4;
+  --clr-cloud-light: rgba(196, 196, 196, .8);
+  --clr-dark-blue: #0b1b34;
+  --clr-green: #03d47c;
+  --clr-eucalyptus: #19aa6d;
+  --clr-coral-pink: #FF8575;
+  --clr-blue: #0185ff;
+}
+
+html, body, p {
+  margin: 0;
+	padding: 0;
+  border: 0;
+}
 
 body {
-  background: red;
+  background: var(--clr-dark-blue);
+  color: var(--clr-white);
+}
+
+ /* -------- General Classes -------- */
+
+.wordmarkSmall {
+  display: block;
+  height: 20px;
+}
+
+.logoSmall {
+  width: 50px;
+}
+
+.btnPrimary {
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+  font-size: 1rem;
+  padding: 15px;
+  font-family: var(--fnt-bold);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnPrimary:hover {
+  background-color: var(--clr-eucalyptus);
+}
+
+.errorMsg {
+  color: var(--clr-coral-pink);
+  margin: 15px 0;
+}
+
+.hireMeBtn {
+  background: transparent;
+  border: none;
+  color: var(--clr-white);
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: var(--fnt-regular);
+  text-decoration: none;
+}
+
+.hireMeBtn:hover {
+  color: var(--clr-blue);
 }
