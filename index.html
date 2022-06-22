@@ -5,33 +5,53 @@
     <meta charset="UTF-8">
     <title>Expensify Take-Home Challenge</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/form.css">
+    <link rel="stylesheet" type="text/css" href="./styles/loginContent.css">
 </head>
 <body>
     <div id="loginContent">
-        <!-- Add your login form here -->
-    </div>
 
-    <div id="transactionTable">
-        <h1>Transactions:</h1>
-        <table>
+        <div class="loginContainer">
+          <div class="loginFormContainer">
 
-            <thead>
-                <tr>
-                    <th>Transaction Date</th>
-                    <th>Merchant</th>
-                    <th>Amount</th>
-                </tr>
-            </thead>
+            <form id="loginForm">
+              <img class="logoSmall" src="./assets/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
+              <div class="loginInput">
+                <label for="login-email"></label>
+                <input type="email" id="login-email" name="login-email" placeholder="Email" required />
+              </div>
+              <div>
+                <div class="loginInput">
+                  <label for="login-pass"></label>
+                  <input type="password" id="login-pass" name="login-pass" placeholder="Password" required />
+                </div>
+                <p class="errorMsg">Incorrect password, please try again.</p>
+              </div>
+              <div class="loginBtnsContainer">
+                <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">Hire me :)</a>
+                <button class="btnPrimary" type="submit">Sign in</button>
+              </div>
+            </form>
 
-            <tbody id="transactionTableBody">
-                <!-- Add the transaction rows here -->
-            </tbody>
+            <footer id="footer">
+              <img class="wordmarkSmall" src="./assets/images/Wordmark_White.svg" alt="Expensify wordmark" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+              </p>
+            </footer>
 
-        </table>
-    </div>
+          </div>
+        </div>
 
-    <div id="transactionForm">
-        <!-- Add your create transaction form here -->
+        <div id="decorativeCarousel">
+          <div class="contentContainer">
+            <p>RECEIPT SCANNING.</p>
+            <p>EXPENSE TRACKING.</p>
+            <p>REIMBURSEMENTS.</p>
+            <p class="decorativeText">ONE APP, ALL <span class="emphasisText">FREE.</span></p>
+          </div>
+        </div>
+
     </div>
 
     <!-- Javascript Files, we've included JQuery here, feel free to use at your discretion. Add whatever else you may need here too. -->
