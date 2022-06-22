@@ -1,0 +1,64 @@
+@media (min-width: 1024px) {
+  #loginContent {
+    display: flex;
+  }
+ }
+
+ /* -------- Decorative Carousel -------- */
+
+#decorativeCarousel {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #decorativeCarousel {
+    flex: 1;
+    display: flex;
+    position: relative;
+    background-color: var(--clr-green);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #decorativeCarousel > .contentContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    font-family: var(--fnt-dark);
+    font-size: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #decorativeCarousel > .contentContainer > p {
+    color: var(--clr-dark-blue);
+  }
+
+  #decorativeCarousel > .contentContainer > .decorativeText {
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-green);
+    padding: 15px;
+  }
+
+  #decorativeCarousel > .contentContainer > .decorativeText > .emphasisText {
+    color: var(--clr-white);
+  }
+ }
+
+  /* -------- Footer -------- */
+
+ #footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  color: var(--clr-cloud);
+  font-size: .7rem;
+  font-family: var(--fnt-regular);
+}
