@@ -16,16 +16,19 @@
 
             <form id="loginForm">
               <img class="logoSmall" src="./assets/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
-              <div class="loginInput">
-                <label for="login-email"></label>
-                <input type="email" id="login-email" name="login-email" placeholder="Email" required />
+              <div id="emailInputContainer">
+                <div class="loginInput">
+                  <label for="login-email"></label>
+                  <input type="email" id="login-email" name="login-email" placeholder="Email" required />
+                </div>
+                <p class="errorMsg"></p>
               </div>
-              <div>
+              <div id="passwordInputContainer">
                 <div class="loginInput">
                   <label for="login-pass"></label>
                   <input type="password" id="login-pass" name="login-pass" placeholder="Password" required />
                 </div>
-                <p class="errorMsg">Incorrect password, please try again.</p>
+                <p class="errorMsg"></p>
               </div>
               <div class="loginBtnsContainer">
                 <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">Hire me :)</a>
@@ -56,7 +59,7 @@
 
     <!-- Javascript Files, we've included JQuery here, feel free to use at your discretion. Add whatever else you may need here too. -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="module" src="script.js"></script>
 
 </body>
 </html>
