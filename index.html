@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <link rel="stylesheet" type="text/css" href="./styles/form.css">
     <link rel="stylesheet" type="text/css" href="./styles/loginContent.css">
+    <link rel="stylesheet" type="text/css" href="./styles/transaction.css">
+    <link rel="stylesheet" type="text/css" href="./styles/transactionCard.css">
 </head>
 <body>
     <div id="loginContent">
@@ -57,25 +59,43 @@
 
     </div>
 
-    <div id="transactionTable">
-      <h1>Transactions:</h1>
-      <table>
+    <div>
 
-          <thead>
-              <tr>
-                  <th>Transaction Date</th>
-                  <th>Merchant</th>
-                  <th>Amount</th>
-              </tr>
-          </thead>
+      <div id="transaction-table">
+        <h1 class="page-title">My Transactions</h1>
+        <div class="add-transaction-btn-container">
+          <button type="button">
+            <img src="./assets/images/plus-icon.svg" alt="Plus sign" />
+            Add transaction
+          </button>
+        </div>
 
-          <tbody id="transactionTableBody">
-              <!-- Add the transaction rows here -->
-          </tbody>
+        <div class="transaction-table-header">
+          <div class="date-header">DATE</div>
+          <div class="merchant-header">MERCHANT</div>
+          <div class="amount-header">AMOUNT</div>
+        </div>
 
-      </table>
+        <div class="transaction-table-body">
+          <div class="transaction-card">
+            <div class="date-container">
+              <img src="./assets/images/calendar-icon.svg" alt="#" />
+              <div class="date-text-container">
+                <p class="date">Jun 11</p>
+                <p class="year">2021</p>
+              </div>
+            </div>
+            <p class="transaction-merchant">Top transaction</p>
+            <div class="transaction-amount">
+              <p>Amount</p>
+              <p class="amount">$45,600.00</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
   </div>
-
   <div id="transactionForm">
       <!-- Add your create transaction form here -->
   </div>
