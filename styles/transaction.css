@@ -1,0 +1,64 @@
+#transaction-table {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-alabaster);
+  color: var(--clr-black);
+  font-family: var(--fnt-regular);
+  min-height: 100vh;
+}
+
+.page-title {
+  color: var(--clr-black);
+  font-family: var(--fnt-dark);
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid var(--clr-cloud);
+}
+
+.add-transaction-btn-container {
+  display: block;
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid var(--clr-cloud);
+}
+
+.add-transaction-btn-container > button {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px 0;
+  border: none;
+  background: none;
+  gap: 15px;
+  font-family: var(--fnt-dark);
+  color: var(--clr-blue);
+  cursor: pointer;
+}
+
+.transaction-table-header {
+  display: flex;
+  font-family: var(--fnt-medium);
+  padding: 15px 35px;
+  border-bottom: 1px solid var(--clr-cloud-light);
+}
+
+.transaction-table-header > .date-header {
+  flex: 1;
+  max-width: 200px;
+}
+
+.transaction-table-header > .merchant-header {
+  flex: 2;
+}
+
+.transaction-table-header > .amount-header {
+  flex: 1;
+  max-width: 200px;
+}
+
+.transaction-table-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+}
