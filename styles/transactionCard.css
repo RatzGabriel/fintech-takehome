@@ -1,0 +1,52 @@
+.transaction-card {
+  display: flex;
+  margin: 0 20px;
+  padding: 20px 20px;
+  border: 1px solid var(--clr-cloud-light);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: .3s box-shadow ease-in-out;
+  cursor: pointer;
+  align-items: center;
+}
+
+.transaction-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.transaction-card > .date-container {
+  flex: 1;
+  max-width: 200px;
+}
+
+.date-container > .date-text-container {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+  color: var(--clr-mountain-mist);
+  font-family: var(--fnt-medium);
+}
+
+.date-container > .date-text-container > :nth-child(2) {
+  font-size: .8rem;
+}
+
+.transaction-card > .transaction-merchant {
+  flex: 2;
+  font-family: var(--fnt-bold);
+}
+
+.transaction-card > .transaction-amount {
+  flex: 1;
+  max-width: 200px;
+  text-align: right;
+}
+
+.transaction-card > .transaction-amount > .amount {
+  margin-top: 5px;
+  font-family: var(--fnt-bold);
+}
+
+.transaction-card > .transaction-amount > :nth-child(1) {
+  font-size: .9rem;
+}
