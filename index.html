@@ -12,7 +12,6 @@
 </head>
 <body>
     <div id="loginContent">
-
         <div class="loginContainer">
           <div class="loginFormContainer">
 
@@ -60,9 +59,8 @@
     </div>
 
     <div>
-
       <div id="transaction-table">
-        <h1 class="page-title">My Transactions</h1>
+        <h1 class="page-title transaction-title">My Transactions</h1>
         <div class="add-transaction-btn-container">
           <button type="button">
             <img src="./assets/images/plus-icon.svg" alt="Plus sign" />
@@ -75,27 +73,10 @@
           <div class="merchant-header">MERCHANT</div>
           <div class="amount-header">AMOUNT</div>
         </div>
-
-        <div id="transaction-table-body">
-          <div class="transaction-card">
-            <div class="date-container">
-              <img src="./assets/images/calendar-icon.svg" alt="#" />
-              <div class="date-text-container">
-                <p class="date">Jun 11</p>
-                <p class="year">2021</p>
-              </div>
-            </div>
-            <p class="transaction-merchant">Top transaction</p>
-            <div class="transaction-amount">
-              <p>Amount</p>
-              <p class="amount">$45,600.00</p>
-            </div>
-          </div>
-        </div>
-
+        <ul id="transaction-table-body"></ul>
       </div>
+    </div>
 
-  </div>
   <div id="transactionForm">
       <!-- Add your create transaction form here -->
   </div>
