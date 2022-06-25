@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url('../assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto-Black';
-  src: url('../assets/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+  src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
 }
 
 :root {
@@ -39,10 +39,14 @@
   --clr-mountain-mist: #949494;
 }
 
-html, body, p, h1, table {
+html, body, p, h1, table, ul {
   margin: 0;
 	padding: 0;
   border: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
