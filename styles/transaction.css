@@ -56,7 +56,7 @@
   max-width: 200px;
 }
 
-.transaction-table-body {
+#transaction-table-body {
   display: flex;
   flex-direction: column;
   gap: 20px;
