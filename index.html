@@ -4,11 +4,11 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8">
     <title>Expensify Take-Home Challenge</title>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/form.css">
-    <link rel="stylesheet" type="text/css" href="./styles/loginContent.css">
-    <link rel="stylesheet" type="text/css" href="./styles/transaction.css">
-    <link rel="stylesheet" type="text/css" href="./styles/transactionCard.css">
+    <link rel="stylesheet" type="text/css" href="client/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="client/styles/form.css">
+    <link rel="stylesheet" type="text/css" href="client/styles/loginContent.css">
+    <link rel="stylesheet" type="text/css" href="client/styles/transaction.css">
+    <link rel="stylesheet" type="text/css" href="client/styles/transactionCard.css">
 </head>
 <body>
     <div id="loginContent">
@@ -16,7 +16,7 @@
           <div class="loginFormContainer">
 
             <form id="loginForm">
-              <img class="logoSmall" src="./assets/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
+              <img class="logoSmall" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
               <div id="emailInputContainer">
                 <div class="loginInput">
                   <label for="login-email"></label>
@@ -38,7 +38,7 @@
             </form>
 
             <footer id="footer">
-              <img class="wordmarkSmall" src="./assets/images/Wordmark_White.svg" alt="Expensify wordmark" />
+              <img class="wordmarkSmall" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
               </p>
@@ -58,12 +58,12 @@
 
     </div>
 
-    <div>
+    <div id="transactions-page">
       <div id="transaction-table">
         <h1 class="page-title transaction-title">My Transactions</h1>
         <div class="add-transaction-btn-container">
           <button type="button">
-            <img src="./assets/images/plus-icon.svg" alt="Plus sign" />
+            <img src="./client/images/plus-icon.svg" alt="Plus sign" />
             Add transaction
           </button>
         </div>
@@ -83,7 +83,7 @@
 
     <!-- Javascript Files, we've included JQuery here, feel free to use at your discretion. Add whatever else you may need here too. -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="client/scripts/app.js"></script>
 
 </body>
 </html>
