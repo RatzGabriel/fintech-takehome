@@ -4,14 +4,14 @@ const calendarIconSrc = './client/images/calendar-icon.svg';
 
 const transactionsView = {
 
-  spinner: document.getElementById('transactions-spinner'),
+  spinner: document.getElementById('transaction-spinner'),
 
-  page: document.getElementById('transactions-page'),
+  page: document.getElementById('transaction-page'),
 
   table: document.getElementById('transaction-table-body'),
 
   render: () => {
-    transactionsView.page.style.display = 'block';
+    transactionsView.page.style.display = 'flex';
   },
 
   renderSingleTransaction: (date, merchant, amount) => {
