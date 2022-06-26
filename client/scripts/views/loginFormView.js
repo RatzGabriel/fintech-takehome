@@ -34,8 +34,8 @@ const loginFormView = {
           loginFormView.emailErrorElem.textContent += 'This email doesn\'t match any account.';
           loginFormView.emailErrorElem.style.display = 'block';
         } else if (response.jsonCode === 401) {
-          loginFormView.passwordErrorElem.textContent += 'Incorrect password. Please try again.';
-          loginFormView.passwordErrorElem.style.display = 'block';
+          loginFormView.passErrorElem.textContent += 'Incorrect password. Please try again.';
+          loginFormView.passErrorElem.style.display = 'block';
         } else if (response.jsonCode === 407) {
           cookies.setCookie('authToken', undefined);
         } else {
