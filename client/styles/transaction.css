@@ -20,10 +20,11 @@
   border-bottom: 1px solid var(--clr-cloud);
 }
 
-.transaction-title {
+#transaction-title {
   position: sticky;
   top: 0;
   background-color: var(--clr-alabaster);
+  z-index: 999;
 }
 
 .add-transaction-btn-container {
@@ -67,6 +68,8 @@
 }
 
 #transaction-table-body {
+  flex: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
