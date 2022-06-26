@@ -99,3 +99,17 @@ body {
 .hireMeBtn:hover {
   color: var(--clr-blue);
 }
+
+.spinner {
+  display: none;
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
