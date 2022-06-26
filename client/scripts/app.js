@@ -12,7 +12,9 @@ const app = {
       loginFormController.initialize(() => transactionsController.initialize());
     } else {
       loginFormView.hide();
-      transactionsController.initialize();
+      transactionsController.initialize(() => {
+        loginFormController.initialize(() => transactionsController.initialize());
+      });
     }
   },
 
