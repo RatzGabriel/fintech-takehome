@@ -1,17 +1,18 @@
-import loginFormView from './loginFormView.js';
-import transactionsView from './transactionsView.js';
+import loginFormView from './views/loginFormView.js';
+import loginFormController from './controllers/loginFormController.js';
+import transactionsController from './controllers/transactionsController.js';
 import cookies from './cookies.js';
 
 const app = {
 
-  authToken: cookies.getSingleCookie('authToken'),
-
   initialize: () => {
-    if (app.authToken === 'undefined') {
-      loginFormView.initialize();
+    const authToken = cookies.getSingleCookie('authToken');
+
+    if (authToken === 'undefined') {
+      loginFormController.initialize(() => transactionsController.initialize());
     } else {
       loginFormView.hide();
-      transactionsView.render();
+      transactionsController.initialize();
     }
   },
 
