@@ -22,14 +22,14 @@
                   <label for="login-email"></label>
                   <input type="email" id="login-email" name="login-email" placeholder="Email" required />
                 </div>
-                <p class="errorMsg"></p>
+                <p id="login-email-error" class="errorMsg"></p>
               </div>
               <div id="passwordInputContainer">
                 <div class="loginInput">
                   <label for="login-pass"></label>
                   <input type="password" id="login-pass" name="login-pass" placeholder="Password" required />
                 </div>
-                <p class="errorMsg"></p>
+                <p id="login-password-error" class="errorMsg"></p>
               </div>
               <div class="loginBtnsContainer">
                 <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">hire_me.com</a>
@@ -60,7 +60,7 @@
 
     <div id="transactions-page">
       <div id="transaction-table">
-        <h1 class="page-title transaction-title">My Transactions</h1>
+        <h1 id="transaction-title" class="page-title">My Transactions</h1>
         <div class="add-transaction-btn-container">
           <button type="button">
             <img src="./client/images/plus-icon.svg" alt="Plus sign" />
@@ -73,7 +73,11 @@
           <div class="merchant-header">MERCHANT</div>
           <div class="amount-header">AMOUNT</div>
         </div>
-        <ul id="transaction-table-body"></ul>
+
+        <ul id="transaction-table-body">
+          <img id="transactions-spinner" class="spinner center" src="./client/images/spinner.gif" alt="data loading spinner" />
+        </ul>
+
       </div>
     </div>
 
