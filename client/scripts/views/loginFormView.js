@@ -12,6 +12,7 @@ const loginFormView = {
   passErrorElem: document.getElementById('login-password-error'),
 
   initialize: (callback) => {
+    loginFormView.show();
     loginFormView.form.addEventListener('submit', (e) => loginFormView.handleSubmit(e, callback));
   },
 
