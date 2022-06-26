@@ -1,4 +1,3 @@
-import loginFormView from '../views/loginFormView.js';
 import transactionsView from '../views/transactionsView.js';
 import transactionsModel from '../models/transactionsModel.js';
 import cookies from '../cookies.js';
@@ -11,13 +10,13 @@ const transactionsController = {
     transactionsController.counter += 1;
   },
 
-  initialize: () => {
+  initialize: (callback) => {
     transactionsView.render();
     transactionsView.startSpinner();
-    setTimeout(() => transactionsController.loadTransactions(), 50);
+    setTimeout(() => transactionsController.loadTransactions(callback), 50);
   },
 
-  loadTransactions: () => {
+  loadTransactions: (callback) => {
     transactionsModel.fetchTransactions()
       .then((response) => {
         transactionsView.stopSpinner();
@@ -32,7 +31,7 @@ const transactionsController = {
         } else if (response.jsonCode === 407) {
           cookies.setCookie('authToken', undefined);
           transactionsView.hide();
-          loginFormView.show();
+          callback();
         }
       })
       .catch((err) => {
