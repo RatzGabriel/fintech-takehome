@@ -53,7 +53,7 @@ const loginFormView = {
   },
 
   show: () => {
-    loginFormView.page.style.display = 'block';
+    loginFormView.page.style.display = 'flex';
   },
 
 };
