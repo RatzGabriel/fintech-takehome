@@ -4,7 +4,7 @@ const transactionsModel = {
 
   data: [],
 
-  fetch: () => new Promise((resolve, reject) => {
+  fetchTransactions: () => new Promise((resolve, reject) => {
     $.ajax({
       method: 'GET',
       url: '../../server/transactions.php',
