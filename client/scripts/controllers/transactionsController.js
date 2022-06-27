@@ -81,7 +81,9 @@ const transactionsController = {
 
   addMultipleTransactions: (list, numOfTransactions = 0) => {
     for (let i = 0; i < numOfTransactions; i++) {
-      transactionsController.addTransaction(list[transactionsController.counter]);
+      if (transactionsController.counter !== list.length) {
+        transactionsController.addTransaction(list[transactionsController.counter]);
+      }
     }
   },
 
