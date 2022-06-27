@@ -1,8 +1,12 @@
+import transactionsModel from '../models/transactionsModel.js';
 import createElem from '../createElem.js';
+import cookies from '../cookies.js';
 
 const calendarIconSrc = './client/images/calendar-icon.svg';
 
 const transactionsView = {
+
+  form: document.getElementById('transaction-form'),
 
   spinner: document.getElementById('transaction-spinner'),
 
@@ -52,6 +56,11 @@ const transactionsView = {
 
   stopSpinner: () => {
     transactionsView.spinner.style.display = 'none';
+  },
+
+  handleSubmit: (e, callback) => {
+    e.preventDefault();
+    callback();
   },
 
 };
