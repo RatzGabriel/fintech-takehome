@@ -134,3 +134,14 @@ body {
   font-size: .7rem;
   font-family: var(--fnt-regular);
 }
+
+.back-btn {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}

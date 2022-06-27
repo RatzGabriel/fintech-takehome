@@ -12,6 +12,24 @@ const transactionsView = {
 
   table: document.getElementById('transaction-table-body'),
 
+  sidebar: document.getElementById('transaction-side-bar'),
+
+  addTransactionBtn: document.getElementsByClassName('add-transaction-btn-container')[0].firstChild.nextSibling,
+
+  backBtn: document.getElementById('transaction-form').firstChild.nextSibling,
+
+  initialize: () => {
+    transactionsView.render();
+
+    transactionsView.addTransactionBtn.addEventListener('click', () => {
+      transactionsView.showForm();
+    });
+
+    transactionsView.backBtn.addEventListener('click', () => {
+      transactionsView.hideForm();
+    })
+  },
+
   render: () => {
     transactionsView.page.style.display = 'flex';
   },
@@ -59,6 +77,14 @@ const transactionsView = {
   handleSubmit: (e, callback) => {
     e.preventDefault();
     callback();
+  },
+
+  showForm: () => {
+    transactionsView.sidebar.style.right = 0;
+  },
+
+  hideForm: () => {
+    transactionsView.sidebar.style.right = '100%';
   },
 
 };

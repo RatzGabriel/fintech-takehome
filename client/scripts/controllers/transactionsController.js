@@ -11,7 +11,7 @@ const transactionsController = {
   },
 
   initialize: (callback) => {
-    transactionsView.render();
+    transactionsView.initialize();
     transactionsView.startSpinner();
 
     transactionsView.form.addEventListener('submit', (e) => {

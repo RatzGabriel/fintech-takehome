@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   width: 400px;
+  background-color: var(--clr-dark-blue);
 }
 
 .form-container {
@@ -76,21 +77,33 @@
 /* ---------- Transactions Form ---------- */
 
 #transaction-side-bar {
-  display: none;
+  position: fixed;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: .5s right ease-in-out;
 }
 
 @media (min-width: 1024px) {
   #transaction-side-bar {
     display: block;
     position: sticky;
+    width: auto;
+    height: 100vh;
     top: 0;
   }
  }
 
 #transaction-form {
-  margin-top: 40%;
   display: flex;
   flex-direction: column;
   font-family: var(--fnt-regular);
   gap: 30px;
+}
+
+@media (min-width: 640px) {
+  #transaction-form {
+    margin-top: 40%;
+  }
 }
