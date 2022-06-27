@@ -3,7 +3,7 @@ import cookies from '../cookies.js';
 
 const loginFormView = {
 
-  page: document.getElementById('loginContent'),
+  page: document.getElementById('login-content'),
 
   form: document.getElementById('loginForm'),
 
