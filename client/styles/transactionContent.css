@@ -12,16 +12,6 @@
   min-height: 100vh;
 }
 
-.page-title {
-  color: var(--clr-black);
-  font-family: var(--fnt-dark);
-}
-
-.page-title-light {
-  color: var(--clr-white);
-  font-family: var(--fnt-dark);
-}
-
 #transaction-title {
   position: sticky;
   top: 0;

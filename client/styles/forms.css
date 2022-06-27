@@ -1,0 +1,96 @@
+.side-bar {
+  width: 100vw;
+  height: 100vh;
+  width: 400px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: auto;
+  min-height: 100%;
+  max-width: 400px;
+  padding: 20px 50px;
+  gap: 40px;
+}
+
+.form-btns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-master-container > label {
+  display: block;
+  font-family: var(--fnt-dark);
+}
+
+.input-container {
+  position: relative;
+  height: 30px;
+}
+
+.input-container > input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--clr-white);
+  outline: none;
+  color: var(--clr-white);
+  font-size: 1rem;
+}
+
+.input-container > input:focus {
+  border-bottom: 1px solid var(--clr-blue);
+}
+
+.input-container > input::placeholder {
+  font-size: 1rem;
+  color: var(--clr-cloud-light);
+}
+
+/* ---------- Login Form ---------- */
+
+#login-container {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #login-container {
+    width: auto;
+  }
+ }
+
+ #login-form {
+  margin-top: 40%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fnt-regular);
+  gap: 30px;
+}
+
+/* ---------- Transactions Form ---------- */
+
+#transaction-side-bar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #transaction-side-bar {
+    display: block;
+    position: sticky;
+    top: 0;
+  }
+ }
+
+#transaction-form {
+  margin-top: 40%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fnt-regular);
+  gap: 30px;
+}

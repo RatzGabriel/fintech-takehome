@@ -4,8 +4,6 @@
   }
  }
 
- /* -------- Decorative Carousel -------- */
-
 #decorativeCarousel {
   display: none;
 }
@@ -49,16 +47,3 @@
     color: var(--clr-white);
   }
  }
-
-  /* -------- Footer -------- */
-
- #footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 15px;
-  color: var(--clr-cloud);
-  font-size: .7rem;
-  font-family: var(--fnt-regular);
-}

@@ -5,7 +5,7 @@ const loginFormView = {
 
   page: document.getElementById('login-content'),
 
-  form: document.getElementById('loginForm'),
+  form: document.getElementById('login-form'),
 
   emailErrorElem: document.getElementById('login-email-error'),
 

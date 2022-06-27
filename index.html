@@ -5,42 +5,43 @@
   <meta charset="UTF-8">
   <title>Expensify Take-Home Challenge</title>
   <link rel="stylesheet" type="text/css" href="client/styles/styles.css">
-  <link rel="stylesheet" type="text/css" href="client/styles/form.css">
+  <link rel="stylesheet" type="text/css" href="client/styles/forms.css">
   <link rel="stylesheet" type="text/css" href="client/styles/loginContent.css">
-  <link rel="stylesheet" type="text/css" href="client/styles/transaction.css">
+  <link rel="stylesheet" type="text/css" href="client/styles/transactionContent.css">
   <link rel="stylesheet" type="text/css" href="client/styles/transactionCard.css">
-  <link rel="stylesheet" type="text/css" href="client/styles/transactionsForm.css">
 </head>
 <body>
-  <div id="loginContent">
+  <div id="login-content">
+    <div id="login-container" class="side-bar">
+      <div class="form-container">
 
-    <div class="loginContainer">
-      <div class="loginFormContainer">
+        <form id="login-form">
+          <img class="logo-small" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
 
-        <form id="loginForm">
-          <img class="logoSmall" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
-          <div id="emailInputContainer">
-            <div class="loginInput">
-              <label for="login-email"></label>
+          <div>
+            <label for="login-email"></label>
+            <div class="input-container">
               <input type="email" id="login-email" name="login-email" placeholder="Email" required />
             </div>
             <p id="login-email-error" class="errorMsg"></p>
           </div>
-          <div id="passwordInputContainer">
-            <div class="loginInput">
-              <label for="login-pass"></label>
+
+          <div>
+            <label for="login-pass"></label>
+            <div class="input-container">
               <input type="password" id="login-pass" name="login-pass" placeholder="Password" required />
             </div>
             <p id="login-password-error" class="errorMsg"></p>
           </div>
-          <div class="loginBtnsContainer">
-            <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">hire_me.com</a>
-            <button class="btnPrimary" type="submit">Sign in</button>
+
+          <div class="form-btns-container">
+            <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hire-me-btn" type="button">hire_me.com</a>
+            <button class="btn-primary" type="submit">Sign in</button>
           </div>
         </form>
 
-        <footer id="footer">
-          <img class="wordmarkSmall" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
+        <footer class="footer">
+          <img class="wordmark-small" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
           </p>
@@ -65,7 +66,7 @@
     <div id="transaction-side-bar" class="side-bar">
       <div class="form-container">
         <form id="transaction-form" class="primary-form">
-          <img class="logoSmall" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
+          <img class="logo-small" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
           <h1 class="page-title-light">Add Transaction</h1>
 
           <div id="transaction-date-input" class="input-master-container">
@@ -90,13 +91,13 @@
           </div>
 
           <div class="form-btns-container" class="input-master-container">
-            <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">hire_me.com</a>
-            <button class="btnPrimary" type="submit">Add</button>
+            <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hire-me-btn" type="button">hire_me.com</a>
+            <button class="btn-primary" type="submit">Add</button>
           </div>
         </form>
 
-        <footer id="footer">
-          <img class="wordmarkSmall" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
+        <footer class="footer">
+          <img class="wordmark-small" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
           </p>
