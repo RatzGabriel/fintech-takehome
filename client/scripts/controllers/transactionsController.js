@@ -24,7 +24,7 @@ const transactionsController = {
   },
 
   loadTransactions: (callback) => {
-    transactionsModel.fetchTransactions()
+    transactionsModel.fetchTransactions(cookies.getSingleCookie('authToken'))
       .then((response) => {
         transactionsView.stopSpinner();
         if (response.jsonCode === 200) {

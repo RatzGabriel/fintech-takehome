@@ -4,12 +4,12 @@ const transactionsModel = {
 
   data: [],
 
-  fetchTransactions: () => new Promise((resolve, reject) => {
+  fetchTransactions: (authToken) => new Promise((resolve, reject) => {
     $.ajax({
       method: 'GET',
       url: '../../server/getTransactions.php',
       data: {
-        authToken: cookies.getSingleCookie('authToken'),
+        authToken,
       },
     })
       .then((response) => resolve(JSON.parse(response)))
