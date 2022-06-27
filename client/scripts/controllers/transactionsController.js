@@ -13,6 +13,13 @@ const transactionsController = {
   initialize: (callback) => {
     transactionsView.render();
     transactionsView.startSpinner();
+
+    transactionsView.form.addEventListener('submit', (e) => {
+      transactionsView.handleSubmit(e, () => {
+        transactionsController.postTransaction();
+      });
+    });
+
     setTimeout(() => transactionsController.loadTransactions(callback), 50);
   },
 
@@ -76,6 +83,17 @@ const transactionsController = {
     for (let i = 0; i < numOfTransactions; i++) {
       transactionsController.addTransaction(list[transactionsController.counter]);
     }
+  },
+
+  postTransaction: () => {
+    transactionsModel.postTransaction(transactionsView.form, cookies.getSingleCookie('authToken'))
+      .then((response) => {
+        const transaction = response.transactionList[0];
+        if (response.jsonCode === 200) {
+          transactionsController.addTransaction(transaction);
+        }
+      })
+      .catch((err) => console.error(err));
   },
 
 };
