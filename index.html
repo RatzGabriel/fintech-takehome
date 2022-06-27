@@ -1,143 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <meta charset="UTF-8">
-    <title>Expensify Take-Home Challenge</title>
-    <link rel="stylesheet" type="text/css" href="client/styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="client/styles/form.css">
-    <link rel="stylesheet" type="text/css" href="client/styles/loginContent.css">
-    <link rel="stylesheet" type="text/css" href="client/styles/transaction.css">
-    <link rel="stylesheet" type="text/css" href="client/styles/transactionCard.css">
-    <link rel="stylesheet" type="text/css" href="client/styles/transactionsForm.css">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
+  <title>Expensify Take-Home Challenge</title>
+  <link rel="stylesheet" type="text/css" href="client/styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="client/styles/form.css">
+  <link rel="stylesheet" type="text/css" href="client/styles/loginContent.css">
+  <link rel="stylesheet" type="text/css" href="client/styles/transaction.css">
+  <link rel="stylesheet" type="text/css" href="client/styles/transactionCard.css">
+  <link rel="stylesheet" type="text/css" href="client/styles/transactionsForm.css">
 </head>
 <body>
-    <div id="loginContent">
-        <div class="loginContainer">
-          <div class="loginFormContainer">
+  <div id="loginContent">
 
-            <form id="loginForm">
-              <img class="logoSmall" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
-              <div id="emailInputContainer">
-                <div class="loginInput">
-                  <label for="login-email"></label>
-                  <input type="email" id="login-email" name="login-email" placeholder="Email" required />
-                </div>
-                <p id="login-email-error" class="errorMsg"></p>
-              </div>
-              <div id="passwordInputContainer">
-                <div class="loginInput">
-                  <label for="login-pass"></label>
-                  <input type="password" id="login-pass" name="login-pass" placeholder="Password" required />
-                </div>
-                <p id="login-password-error" class="errorMsg"></p>
-              </div>
-              <div class="loginBtnsContainer">
-                <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">hire_me.com</a>
-                <button class="btnPrimary" type="submit">Sign in</button>
-              </div>
-            </form>
+    <div class="loginContainer">
+      <div class="loginFormContainer">
 
-            <footer id="footer">
-              <img class="wordmarkSmall" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-              </p>
-            </footer>
-
+        <form id="loginForm">
+          <img class="logoSmall" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
+          <div id="emailInputContainer">
+            <div class="loginInput">
+              <label for="login-email"></label>
+              <input type="email" id="login-email" name="login-email" placeholder="Email" required />
+            </div>
+            <p id="login-email-error" class="errorMsg"></p>
           </div>
-        </div>
-
-        <div id="decorativeCarousel">
-          <div class="contentContainer">
-            <p>RECEIPT SCANNING.</p>
-            <p>EXPENSE TRACKING.</p>
-            <p>REIMBURSEMENTS.</p>
-            <p class="decorativeText">ONE APP, ALL <span class="emphasisText">FREE.</span></p>
+          <div id="passwordInputContainer">
+            <div class="loginInput">
+              <label for="login-pass"></label>
+              <input type="password" id="login-pass" name="login-pass" placeholder="Password" required />
+            </div>
+            <p id="login-password-error" class="errorMsg"></p>
           </div>
-        </div>
+          <div class="loginBtnsContainer">
+            <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">hire_me.com</a>
+            <button class="btnPrimary" type="submit">Sign in</button>
+          </div>
+        </form>
 
-    </div>
-
-    <div id="transaction-page">
-
-      <div id="transaction-side-bar" class="side-bar">
-        <div class="form-container">
-
-          <form id="transaction-form" class="primary-form">
-            <img class="logoSmall" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
-            <h1 class="page-title-light">Add Transaction</h1>
-
-            <div id="transaction-date-input" class="input-master-container">
-              <label for="transaction-date">Date</label>
-              <div class="input-container">
-                <input type="date" id="transaction-date" name="transaction-date" placeholder="YY-MM-DD" required />
-              </div>
-              <p id="transaction-date-error" class="errorMsg"></p>
-            </div>
-
-            <div id="transaction-amount-input" class="input-master-container">
-              <label for="transaction-amount">Amount in cents</label>
-              <div class="input-container">
-                <input type="number" id="transaction-amount" name="transaction-amount" placeholder="100 = $1.00" required />
-              </div>
-              <p id="transaction-amount-error" class="errorMsg"></p>
-            </div>
-
-            <div id="transaction-merchant-input" class="input-master-container">
-              <label for="transaction-merchant">Merchant</label>
-              <div class="input-container">
-                <input type="text" id="transaction-merchant" name="transaction-merchant" placeholder="Costco" required />
-              </div>
-              <p id="transaction-merchant-error" class="errorMsg"></p>
-            </div>
-
-            <div class="form-btns-container" class="input-master-container">
-              <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">hire_me.com</a>
-              <button class="btnPrimary" type="submit">Add</button>
-            </div>
-          </form>
-
-          <footer id="footer">
-            <img class="wordmarkSmall" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-            </p>
-          </footer>
-
-        </div>
-      </div>
-
-      <div id="transaction-table">
-        <h1 id="transaction-title" class="page-title">My Transactions</h1>
-        <div class="add-transaction-btn-container">
-          <button type="button">
-            <img src="./client/images/plus-icon.svg" alt="Plus sign" />
-            Add transaction
-          </button>
-        </div>
-
-        <div class="transaction-table-header">
-          <div class="date-header">DATE</div>
-          <div class="merchant-header">MERCHANT</div>
-          <div class="amount-header">AMOUNT</div>
-        </div>
-
-        <ul id="transaction-table-body">
-          <img id="transaction-spinner" class="spinner center" src="./client/images/spinner.gif" alt="data loading spinner" />
-        </ul>
+        <footer id="footer">
+          <img class="wordmarkSmall" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+          </p>
+        </footer>
 
       </div>
-
     </div>
 
-  <div id="transactionForm">
-      <!-- Add your create transaction form here -->
+    <div id="decorativeCarousel">
+      <div class="contentContainer">
+        <p>RECEIPT SCANNING.</p>
+        <p>EXPENSE TRACKING.</p>
+        <p>REIMBURSEMENTS.</p>
+        <p class="decorativeText">ONE APP, ALL <span class="emphasisText">FREE.</span></p>
+      </div>
+    </div>
+
   </div>
 
-    <!-- Javascript Files, we've included JQuery here, feel free to use at your discretion. Add whatever else you may need here too. -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="module" src="client/scripts/app.js"></script>
+  <div id="transaction-page">
+
+    <div id="transaction-side-bar" class="side-bar">
+      <div class="form-container">
+        <form id="transaction-form" class="primary-form">
+          <img class="logoSmall" src="./client/images/Iconmark_Reversed.svg" alt="Expensify Logo" />
+          <h1 class="page-title-light">Add Transaction</h1>
+
+          <div id="transaction-date-input" class="input-master-container">
+            <label for="transaction-date">Date</label>
+            <div class="input-container">
+              <input type="date" id="transaction-date" name="transaction-date" placeholder="YY-MM-DD" required />
+            </div>
+          </div>
+
+          <div id="transaction-amount-input" class="input-master-container">
+            <label for="transaction-amount">Amount in cents</label>
+            <div class="input-container">
+              <input type="number" id="transaction-amount" name="transaction-amount" placeholder="100 = $1.00" required />
+            </div>
+          </div>
+
+          <div id="transaction-merchant-input" class="input-master-container">
+            <label for="transaction-merchant">Merchant</label>
+            <div class="input-container">
+              <input type="text" id="transaction-merchant" name="transaction-merchant" placeholder="Costco" required />
+            </div>
+          </div>
+
+          <div class="form-btns-container" class="input-master-container">
+            <a href="https://github.com/ec-rilo" target="_blank" rel="noreferrer" class="hireMeBtn" type="button">hire_me.com</a>
+            <button class="btnPrimary" type="submit">Add</button>
+          </div>
+        </form>
+
+        <footer id="footer">
+          <img class="wordmarkSmall" src="./client/images/Wordmark_White.svg" alt="Expensify wordmark" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <div id="transaction-table">
+      <h1 id="transaction-title" class="page-title">My Transactions</h1>
+      <div class="add-transaction-btn-container">
+        <button type="button">
+          <img src="./client/images/plus-icon.svg" alt="Plus sign" />
+          Add transaction
+        </button>
+      </div>
+
+      <div class="transaction-table-header">
+        <div class="date-header">DATE</div>
+        <div class="merchant-header">MERCHANT</div>
+        <div class="amount-header">AMOUNT</div>
+      </div>
+
+      <ul id="transaction-table-body">
+        <img id="transaction-spinner" class="spinner center" src="./client/images/spinner.gif" alt="data loading spinner" />
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Javascript Files, we've included JQuery here, feel free to use at your discretion. Add whatever else you may need here too. -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="module" src="client/scripts/app.js"></script>
 
 </body>
 </html>
