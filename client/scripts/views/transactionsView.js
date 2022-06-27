@@ -1,6 +1,4 @@
-import transactionsModel from '../models/transactionsModel.js';
 import createElem from '../createElem.js';
-import cookies from '../cookies.js';
 
 const calendarIconSrc = './client/images/calendar-icon.svg';
 
