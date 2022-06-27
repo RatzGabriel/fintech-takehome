@@ -93,6 +93,7 @@ const transactionsController = {
         const transaction = response.transactionList[0];
         if (response.jsonCode === 200) {
           transactionsController.addTransaction(transaction);
+          window.alert('Transaction added!');
         }
       })
       .catch((err) => console.error(err));
