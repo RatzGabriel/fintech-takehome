@@ -7,7 +7,7 @@ const transactionsModel = {
   fetchTransactions: () => new Promise((resolve, reject) => {
     $.ajax({
       method: 'GET',
-      url: '../../server/transactions.php',
+      url: '../../server/getTransactions.php',
       data: {
         authToken: cookies.getSingleCookie('authToken'),
       },
@@ -22,7 +22,7 @@ const transactionsModel = {
 
     $.ajax({
       method: 'POST',
-      url: '../../server/transactionsPost.php',
+      url: '../../server/postTransactions.php',
       data: $.param(newData),
     })
       .then((response) => resolve(JSON.parse(response)))
