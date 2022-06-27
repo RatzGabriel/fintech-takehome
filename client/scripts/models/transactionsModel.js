@@ -16,6 +16,19 @@ const transactionsModel = {
       .fail((err) => reject(err));
   }),
 
+  postTransaction: (data, authToken) => new Promise((resolve, reject) => {
+    const newData = $(data).serializeArray();
+    newData.push({ name: 'authToken', value: authToken });
+
+    $.ajax({
+      method: 'POST',
+      url: '../../server/transactionsPost.php',
+      data: $.param(newData),
+    })
+      .then((response) => resolve(JSON.parse(response)))
+      .catch((err) => reject(err));
+  }),
+
   addTransaction: (transaction) => {
     const formattedTransaction = transactionsModel.formatTransaction(transaction);
     transactionsModel.data.push(formattedTransaction);
