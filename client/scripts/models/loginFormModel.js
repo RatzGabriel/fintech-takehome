@@ -3,7 +3,7 @@ const loginFormModel = {
   fetchAuth: (formData) => new Promise((resolve, reject) => {
     $.ajax({
       method: 'POST',
-      url: '../../server/postAuth.php',
+      url: '../../proxies/postAuth.php',
       data: $(formData).serialize(),
     })
       .then((response) => resolve(JSON.parse(response)))
