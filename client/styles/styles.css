@@ -90,7 +90,7 @@ body {
   background-color: var(--clr-eucalyptus);
 }
 
-.errorMsg {
+.error-msg {
   display: none;
   color: var(--clr-coral-pink);
   margin: 15px 0 0 0 ;
